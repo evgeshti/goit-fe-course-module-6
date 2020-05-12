@@ -1,0 +1,112 @@
+/* базовый сброс */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* сброс листам стилизацию */
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* container */
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+/* Header */
+
+/* Logo */
+
+.logo {
+  /* font-family: "Montserrat-bold", sans-serif; */
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(78, 198, 171);
+}
+
+.navigation_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation_list_item {
+  margin-right: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: rgb(78, 198, 171);
+}
+
+.navigation_list_item:last-child {
+  margin-right: 0;
+}
+
+/* .navigation_list_item::after { */
+
+.nav_link {
+  display: block;
+  position: relative;
+}
+
+.nav_link::before {
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  background-color: #f38181;
+  height: 3px;
+
+  /* visibility: hidden;
+  opacity: 0; */
+  transition: width 0.5s linear;
+}
+
+.navigation_list_item:hover {
+  color: #f38181;
+}
+
+/* .navigation_list_item:hover::after { */
+
+.nav_link:hover::before {
+  /* visibility: visible;
+  opacity: 1; */
+  width: 100%;
+}
+
+.nav_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
