@@ -40,10 +40,6 @@ img {
 
 /* Logo */
 
-.logo {
-  /* font-family: "Montserrat-bold", sans-serif; */
-}
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -167,6 +163,35 @@ img {
 .title_span {
   display: block;
   margin-bottom: 22px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.title_span_2 {
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 /* our team */
@@ -181,7 +206,7 @@ img {
 }
 
 .team_p {
-  width: 944px;
+  width: 1000px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 96px;
@@ -190,6 +215,7 @@ img {
 .team_cards_list {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 86px;
 }
 
 .team_cards_item {
@@ -229,13 +255,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 
 .team_cards_item:hover .overlay {
   visibility: visible;
   opacity: 1;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 
 .social_1 {
@@ -266,16 +292,79 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fce38a;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 
 .cards_social:hover {
   background-color: #95e1d3;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 
 .team_cards_item:hover .wrap_img {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0 0 #95e1d3;
-  transition: 1s linear;
+  transition: 0.3s linear;
+}
+
+.team_cards_position {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  padding: 26px 0 26px 0;
+}
+
+.footer_p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.contact-form__input {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-style: italic;
+  line-height: 1.6;
+  height: 40px;
+  width: 150px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: solid #e5e5e5 1px;
+  position: absolute;
+  border-right: unset;
+  outline: none !important;
+}
+
+.contact-form__btn {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  border: solid #e5e5e5 1px;
+  height: 40px;
+  width: 150px;
+  transition: 0.3s linear;
+}
+
+.contact-form__btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #95e1d3;
+  border: unset;
+  transition: 0.3s linear;
+}
+
+.contact-form {
+  position: relative;
 }
