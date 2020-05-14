@@ -320,6 +320,7 @@ p {
   justify-content: space-between;
   border-top: 1px solid #e5e5e5;
   padding: 26px 0 26px 0;
+  align-items: baseline;
 }
 
 .footer_p {
@@ -343,6 +344,8 @@ p {
   position: absolute;
   border-right: unset;
   outline: none !important;
+  top: 0;
+  right: 150px;
 }
 
 .contact-form__btn {
